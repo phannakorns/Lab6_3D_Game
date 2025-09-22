@@ -1,0 +1,67 @@
+[gd_scene load_steps=15 format=3 uid="uid://b8l2ottsk2js5"]
+
+[ext_resource type="PackedScene" uid="uid://cvaujultkh1en" path="res://assets/Fast Run.tscn" id="1_457xp"]
+[ext_resource type="Script" uid="uid://c6186heqq6wfo" path="res://assets/demo.gd" id="1_xfgwy"]
+[ext_resource type="PackedScene" uid="uid://bc3dp37j1flka" path="res://assets/Sleeping Idle.tscn" id="2_xfgwy"]
+[ext_resource type="PackedScene" uid="uid://d17ha5x0fhhd2" path="res://assets/Walking.tscn" id="3_137jn"]
+[ext_resource type="PackedScene" uid="uid://cs3088on6372v" path="res://assets/Zombie Run.tscn" id="4_uskw3"]
+[ext_resource type="PackedScene" uid="uid://c6blvhotmju5e" path="res://Basic VRC Pack.undefined-glb/Cup.glb" id="6_3xmef"]
+[ext_resource type="PackedScene" uid="uid://cx7f5buqdfij8" path="res://Basic VRC Pack.undefined-glb/Rubiks Cube.glb" id="7_ehoep"]
+[ext_resource type="PackedScene" uid="uid://di6uthcfbdtx1" path="res://Basic VRC Pack.undefined-glb/Rug Round.glb" id="8_50wl6"]
+[ext_resource type="PackedScene" uid="uid://be5vt76jxjwjr" path="res://Basic VRC Pack.undefined-glb/Bowls Cat.glb" id="8_yqfd4"]
+[ext_resource type="PackedScene" uid="uid://dbcmg7wr8sl3i" path="res://Basic VRC Pack.undefined-glb/Chair.glb" id="9_p3yuf"]
+[ext_resource type="PackedScene" uid="uid://c3fcylaiowxtp" path="res://Basic VRC Pack.undefined-glb/Drawer.glb" id="10_th64v"]
+[ext_resource type="PackedScene" uid="uid://c4s6wnj7djv0v" path="res://Basic VRC Pack.undefined-glb/Laptop.glb" id="11_p3yuf"]
+[ext_resource type="PackedScene" uid="uid://eu65o15vmbx0" path="res://Basic VRC Pack.undefined-glb/Whiteboard.glb" id="13_th64v"]
+[ext_resource type="PackedScene" uid="uid://bwv1pp67ne6l0" path="res://Basic VRC Pack.undefined-glb/Couch.glb" id="14_f7tf8"]
+
+[node name="Node3D" type="Node3D"]
+script = ExtResource("1_xfgwy")
+
+[node name="Fast Run" parent="." instance=ExtResource("1_457xp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.41693, 0, -0.160752)
+
+[node name="Sleeping Idle" parent="." instance=ExtResource("2_xfgwy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.77672, 0, 7.44142)
+
+[node name="Walking" parent="." instance=ExtResource("3_137jn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.3416, -9.53674e-07, 6.36462)
+
+[node name="Zombie Run" parent="." instance=ExtResource("4_uskw3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.411, 0, 7.01615)
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.66525, 6.8935, 24.4051)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 13.4671, 0)
+
+[node name="Cup" parent="." instance=ExtResource("6_3xmef")]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 7.21102, 0, 0)
+
+[node name="Rug Round" parent="." instance=ExtResource("8_50wl6")]
+transform = Transform3D(20, 0, 0, 0, 20, 0, 0, 0, 20, -1.75975, -0.593229, 0)
+
+[node name="Bowls Cat" parent="." instance=ExtResource("8_yqfd4")]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, -2.38675, 0, 11.8176)
+
+[node name="Chair" parent="." instance=ExtResource("9_p3yuf")]
+transform = Transform3D(-0.0378118, 0, -3.4998, 0, 3.5, 0, 3.4998, 0, -0.0378118, 0.996883, 0, -10.8602)
+
+[node name="Chair2" parent="." instance=ExtResource("9_p3yuf")]
+transform = Transform3D(2.63075, 0, -2.30849, 0, 3.5, 0, 2.30849, 0, 2.63075, -19.137, 0, -4.53915)
+
+[node name="Drawer" parent="." instance=ExtResource("10_th64v")]
+transform = Transform3D(1.54593, 0, -3.25117, 0, 3.6, 0, 3.25117, 0, 1.54593, -14.12, 0, -10.638)
+
+[node name="Laptop" parent="." instance=ExtResource("11_p3yuf")]
+transform = Transform3D(1.3, 0, 0, 0, 1.3, 0, 0, 0, 1.3, 7.82244, 0, 10.4264)
+
+[node name="Rubliks" parent="." instance=ExtResource("7_ehoep")]
+transform = Transform3D(1.4, 0, 0, 0, 1.4, 0, 0, 0, 1.4, -11.0281, 0, 6.65219)
+
+[node name="Whiteboard" parent="." instance=ExtResource("13_th64v")]
+transform = Transform3D(0.666303, 0, -1.45466, 0, 1.6, 0, 1.45466, 0, 0.666303, -4.93044, 4.40261, -7.72391)
+
+[node name="Couch" parent="." instance=ExtResource("14_f7tf8")]
+transform = Transform3D(2.65118, 0, 2.43541, 0, 3.6, 0, -2.43541, 0, 2.65118, 11.6051, 0, -7.45743)
